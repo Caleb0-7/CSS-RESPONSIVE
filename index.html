@@ -3,117 +3,201 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design</title>
+    <title>CalebDev</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/01.css"> -->
-    <!-- <link rel="stylesheet" href="css/02.css"> -->
-    <!-- <link rel="stylesheet" href="css/03.css">  -->
-    <!-- <link rel="stylesheet" href="css/04.css"> -->
-    <!-- <link rel="stylesheet" href="css/05.css"> -->
-    <!-- <link rel="stylesheet" href="css/06.css"> -->
-    <!-- <link rel="stylesheet" href="css/07.css"> -->
-    <!-- <link rel="stylesheet" href="css/08.css"> -->
-    <!-- <link rel="stylesheet" href="css/09.css">   -->
-    <link rel="stylesheet" href="css/10.css">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
 
 </head>
 
-<body>
+<body class="">
 
-    <div class="caja-curso">
-        <h1>CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos</h1>
-        <p>- Juan De la torre @codigoconjuan</p>
-        <a target="blank" rel="nofollow noopener noreferrer" href="https://codigoconjuan.com/">Vísita mi sitio Codigo
-            Con Juan</a>
-    </div>
+    <header class="header  ">
+        <h1 class="header__heading contenedor"><span>Caleb</span>Dev</h1>
 
-    <div class="contenedor">
+        <nav class="header__nav ">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#inicio" class="header__nav-link">Inicio</a></li>
+                <li class="header__nav-item"><a href="#portafolio" class="header__nav-link">Servicios</a></li>
+                <li class="header__nav-item"><a href="#acerca" class="header__nav-link">Acerca</a></li>
+                <li class="header__nav-item"><a href="#contacto" class="header__nav-link">Contacto</a></li>
+            </ul>
+        </nav><!--Navegacion-->
+    </header><!--Header-->
 
-        <h2>Primeros Pasos con Media Queries</h2>
+    <main class="main ">
 
-        <div class="oferta">
-            <p class="precio">$20 Descuento</p>
-            <p class="texto">Utiliza el cupón: 20OFF al pagar</p>
+        <div class="main__section main__section--inicio   " id="inicio">
+            <div class="inicio">
+                 <h2 class="inicio__heading">Sobre mi</h2>
+
+
+                <div class="inicio__contenido contenedor">
+                    
+                    <div class="inicio__texto">
+                        <p class="inicio__text">¡Hola! Soy Caleb, desarrollador web especializado en <strong>diseño responsivo,
+                                optimización SEO y experiencia de usuario intuitiva</strong>, creando sitios modernos y
+                            eficientes.</p>
+
+                        <p class="inicio__text">Mi objetivo es transformar ideas en sitios funcionales que reflejen la identidad
+                            y visión de cada cliente. <strong>Construyo páginas optimizadas que mejoran la presencia digital y
+                                el rendimiento</strong>.</p>
+
+                        <a href="#contacto" class="cta-button">Solicita tu sitio web</a>
+                    
+                    </div>
+                 
+                    <div class="inicio__imagen">
+                        <img src="img/caleb.png" alt="Caleb Dev" class="inicio__imagen-foto">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div><!--Sobre mi-->
+    
+        <div class="main__section main__section--portafolio" id="portafolio">
+                <h2 class="portafolio__titulo">Portafolio de proyectos</h2>
+            <div class="portafolio contenedor">
+                
+                
+                <div class="portafolio__proyectos portafolio__proyectos-columna1">
+                    <div class="portafolio__heading">
+                        <h3 class="portafolio__nombre">Sitio Web - Arquitectura</h3>
+
+                        <iframe src="https://caleb0-7.github.io/Arquitectura" class="portafolio__iframe"
+                           
+                            title="Sitio Web de Arquitectura"></iframe>
+                        <a href="https://caleb0-7.github.io/Arquitectura" class="cta-button" target="_blank"
+                            rel="noopener">
+                            Visitar sitio de muestra
+                        </a>
+                    </div>
+                </div>
+                <div class="portafolio__proyectos portafolio__proyectos-columna2">
+                    <div class="portafolio__heading">
+                        <h3 class="portafolio__nombre">Sitio Web - TechPro</h3>
+
+                        <iframe src="https://caleb0-7.github.io/TechPro/" class="portafolio__iframe"
+                           
+                            title="Sitio Web de Arquitectura"></iframe>
+                        <a href="https://caleb0-7.github.io/TechPro/" class="cta-button" target="_blank" rel="noopener">
+                            Visitar sitio de muestra
+                        </a>
+                    </div>
+                </div>
+                <div class="portafolio__proyectos portafolio__proyectos-columna3">
+                    <div class="portafolio__heading">
+                        <h3 class="portafolio__nombre">E-commerce</h3>
+
+                        <iframe src="https://caleb0-7.github.io/e-commerce" class="portafolio__iframe"
+                           
+                            title="Sitio Web de Arquitectura"></iframe>
+                        <a href="https://caleb0-7.github.io/e-commerce" class="cta-button" target="_blank"
+                            rel="noopener">
+                            Visitar sitio de muestra
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!--Portafolio-->
+
+        <div class="main__section main__section--acerca  " id="acerca">
+            <div class="servicios contenedor">
+                <h2 class="servicios__heading">Servicios</h2>
+                <ul class="servicios__lista">
+                    <li class="servicios__item">
+                        <h3 class="servicios__titulo">Diseño Web Responsivo</h3>
+                        <p class="servicios__descripcion">
+                            Creación de sitios web adaptables a cualquier dispositivo, asegurando una experiencia óptima en móviles, tabletas y computadoras.
+                        </p>
+                        <div class="servicios__imagen">
+                            <img src="img/responsive.png" alt="Diseño Web Responsivo" class="servicios__icono">
+                        </div>
+                    </li>
+                    <li class="servicios__item">
+                        <h3 class="servicios__titulo">Optimización UX/UI</h3>
+                        <p class="servicios__descripcion">
+                            Desarrollo de interfaces intuitivas y atractivas, enfocadas en la facilidad de uso y la satisfacción del usuario final.
+                        </p>
+                         <div class="servicios__imagen">
+                            <img src="img/optimizacion.png" alt="Optimizacion UX / UI" class="servicios__icono">
+                        </div>
+                    </li>
+                    <li class="servicios__item">
+                        <h3 class="servicios__titulo">Rediseño y Modernización</h3>
+                        <p class="servicios__descripcion">
+                            Actualización de sitios existentes con las últimas tendencias de diseño, mejorando la imagen y funcionalidad de tu presencia digital.
+                        </p>
+                         <div class="servicios__imagen">
+                            <img src="img/rediseno.png" alt="Rediseño Y Modernizacion" class="servicios__icono">
+                        </div>
+                    </li>
+                </ul>
+             
+            </div>
+        </div><!--Servicios-->
+
+        <div class="main__section main__section--contacto" id="contacto">
+            <div class="contacto contenedor">
+                <h2 class="contacto__heading">Contacto</h2>
+                <form class="contacto__form" action="https://formsubmit.co/caleblara007@gmail.com" method="post" autocomplete="off">
+                    <div class="contacto__form-group">
+                        <label for="contacto-nombre" class="contacto__form-label">Nombre</label>
+                        <input type="text" id="contacto-nombre" name="nombre" class="contacto__form-input" required>
+                    </div>
+                    <div class="contacto__form-group">
+                        <label for="contacto-email" class="contacto__form-label">Email</label>
+                        <input type="email" id="contacto-email" name="email" class="contacto__form-input" required>
+                    </div>
+                    <div class="contacto__form-group">
+                        <label for="contacto-mensaje" class="contacto__form-label">Mensaje</label>
+                        <textarea id="contacto-mensaje" name="mensaje" class="contacto__form-input" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contacto__form-button">Enviar</button>
+                </form>
+  
+            </div>
+        </div><!--Contacto-->
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content contenedor">
+            <div class="footer__info">
+                    <p>Puedes contactarme directamente en:</p>
+                    <ul class="footer__info-list">
+   
+                        <li class="footer__info-item">
+                                <img src="img/correo-electronico.png" alt="Email" class="footer__info-icon" /> 
+
+                            <a href="mailto:caleblara007@gmail.com" class="footer__info-link" target="_blank">
+                           caleblara007@gmail.com
+                            </a>
+                        </li>
+                        <li class="footer__info-item">
+                                <img src="img/github.png" alt="GitHub" class="footer__info-icon" /> 
+
+                            <a href="https://github.com/caleb0-7" class="footer__info-link" target="_blank">
+                            GitHub
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+          
+
+
         </div>
-
-        <h2>Mobile First</h2>
-
-        <div class="oferta">
-            <p class="precio">$20 Descuento</p>
-            <p class="texto">Utiliza el cupón: 20OFF al pagar</p>
+          <p class="footer__text">&copy; 2024 CalebDev</p>
         </div>
-
-        <h2>Desktop First</h2>
-
-        <div class="oferta">
-            <p class="precio">$20 Descuento</p>
-            <p class="texto">Utiliza el cupón: 20OFF al pagar</p>
-        </div>
-
-        <h2>Media Queries entre 2 tamaños</h2>
-        <div class="oferta">
-            <p class="precio">$20 Descuento</p>
-            <p class="texto">Utiliza el cupón: 20OFF al pagar</p>
-        </div>
-
-        <h2>Shorthand para Media Queries</h2>
-
-        <h2>Tamaños estándar</h2>
-
-        <h2>Contenedores Responsive</h2>
-
-        <div class="contenedor-responsive">
-
-        </div>
-
-        <h2>3 Columnas Responsive Flexbox</h2>
-
-        <div class="tres-columnas-flex">
-            <div class="columna">1</div>
-            <div class="columna">2</div>
-            <div class="columna">3</div>
-        </div>
-
-        <h2>3 Columnas Responsive Grid</h2>
-
-        <div class="tres-columnas-grid">
-            <div class="columna">1</div>
-            <div class="columna">2</div>
-            <div class="columna">3</div>
-        </div>
-
-        <h2>Imágenes Responsive</h2>
-        <!-- <img src="img/imagen.webp" alt="imagen responsive"> -->
-
-
-        <h2>Formatos Modernos</h2>
-
-        <!--avif y webp formatos modernos-->
-
-        <!-- <picture >
-            <source srcset="img/imagen.avif" type="image/avif">
-            <source srcset="img/imagen.webp" type="image/webp">
-            <img loading="lazy" src="img/imagen-1000.jpg" alt="imagen responsive">
-        </picture > -->
-
-        <!--Snippet im para imagenes de formato moderno-->
-
-        <!-- <picture>
-            <source srcset="img/imagen.avif" type="image/avif">
-            <source srcset="img/imagen.webp" type="image/webp">
-            <img loading="lazy" src="img/imagen.jpg" width="500" heigth="300" alt="imagen responsive">
-        </picture> -->
-        <!--Formatos modernos-->
-        <h2>Formatos Modernos con SRC SET</h2>
-       
-    </div>
+    </footer><!--footer-->
 
 </body>
 
